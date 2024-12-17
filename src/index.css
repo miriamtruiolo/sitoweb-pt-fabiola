@@ -15,9 +15,13 @@
 
     --primary-hue: 172;
     --gray-hue: 240;
+    --color-dark: #322c2c;
+    --color-light: white;
+    --color-gradient: linear-gradient(95deg,#FFF5EB, #005247);
     --color-primary: hsl(var(--primary-hue), 100%, 16%);
-    --color-primary-variant: hsl(var(--primary-hue), 100%, 30%);
-    --color-secondary: #FF9018;
+    --color-primary-variant: hsl(var(--primary-hue), 80%, 23%);
+    --color-secondary: #FF7A00;
+    --color-hover: #FF9018;
     --color-gray-100: hsl(var(--gray-hue),47%, 94%);
     --color-gray-200: hsl(var(--gray-hue), 26%, 75%);
     --color-gray-300: hsl(var(--gray-hue), 24%, 64%);
@@ -38,7 +42,7 @@ body{
     color: var(--color-gray-200);
     line-height: 1.7;
     overflow-x: hidden;
-    background: var(--color-gray-600);
+    background: var(--color-gradient);
 }
 
 .container {
@@ -69,3 +73,111 @@ img {
     object-fit: cover;
     width: 100%;
 }
+
+
+
+
+
+.btn {
+    color: var(--color-gray-100);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.9rem 2rem;
+    background: var(--color-secondary);
+    border-radius: 1.5rem;
+    transition: var(--transaction);
+}
+
+.btn:hover {
+    background: var(--color-hover);
+    color: var(--color-gray-600);
+}
+
+.btn.lg {
+    padding: 1.2rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+}
+
+.btn.sm {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
+}
+
+.btn.sm:hover {
+    background: var(--color-gray-100);
+}
+
+
+
+
+
+
+
+section {
+    margin-top: 10rem;
+}
+
+.section__head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section__head span {
+    background: var(--color-dark);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: var(--color-hover);
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+.card {
+    background: var(--color-primary);
+    border: 2px solid transparent;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 0 3rem 0 3rem;
+    transition: var(--transaction);
+}
+
+.card:hover {
+    background-color: var(--color-primary-variant);
+    border-color: var(--color-hover);
+    cursor: default;
+}
+
+.card span {
+    width: 3rem;
+    height: 3rem;
+    background: var(--color-hover);
+    color: var(--color-dark);
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1.5rem;
+    margin-inline: auto;
+    border-radius: 1rem;
+    transition: var(--transaction);
+}
+.card:hover span{
+    background: var(--color-primary);
+    color: var(--color-hover);
+}
+
+.card small {
+    margin-top: 1rem;
+    display: block;
+    font-weight: 300;
+}
+

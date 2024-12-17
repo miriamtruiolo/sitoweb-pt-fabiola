@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../images/logo.png";
+import Logo from "../images/logoFaby.png";
 import { links } from "../data";
 import { FaBars } from "react-icons/fa6";
 import {MdOutlineClose} from 'react-icons/md'
